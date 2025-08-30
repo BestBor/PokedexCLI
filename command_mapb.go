@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func callbackMapb(cfg *config) error {
+func callbackMapb(cfg *config, args ...string) error {
 	if cfg.prevLocURL == nil {
 		return errors.New("located on first page")
 	}
