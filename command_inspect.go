@@ -30,7 +30,6 @@ func callbackInspect(cfg *config, args ...string) error {
 	}
 
 	cfg.caughtPokemons[pokemonName] = pokemon
-	fmt.Printf("%s was caught!\n", pokemonName)
 
 	return nil
 }

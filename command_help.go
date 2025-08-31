@@ -9,7 +9,7 @@ func callbackHelp(cfg *config, args ...string) error {
 	fmt.Println("Available commands:")
 	commandList := getCommands()
 	for _, cmd := range commandList {
-		fmt.Printf("  %-10s %s\n", cmd.name, cmd.description)
+		fmt.Printf("  %-25s %s\n", cmd.name, cmd.description)
 	}
 	return nil
 }

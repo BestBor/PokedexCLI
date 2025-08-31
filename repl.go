@@ -15,11 +15,6 @@ type cliCommand struct {
 
 func getCommands() map[string]cliCommand {
 	return map[string]cliCommand{
-		"exit": {
-			name:        "exit",
-			description: "Exit the Pokedex",
-			callback:    callbackExit,
-		},
 		"help": {
 			name:        "help",
 			description: "Describes how to use the REPL",
@@ -49,6 +44,16 @@ func getCommands() map[string]cliCommand {
 			name:        "inspect <pokemon_name>",
 			description: "View information about given pokemon",
 			callback:    callbackInspect,
+		},
+		"pokedex": {
+			name:        "pokedex",
+			description: "View all available pokemons in this pokedex",
+			callback:    callbackPokedex,
+		},
+		"exit": {
+			name:        "exit",
+			description: "Exit the Pokedex",
+			callback:    callbackExit,
 		},
 	}
 }
